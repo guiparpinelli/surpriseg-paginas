@@ -4,6 +4,8 @@ coverage/
 dist/*
 !dist/index.html
 node_modules/
+package-lock.json
+yarn.lock
 *.log
 
 # OS generated files
