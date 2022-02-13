@@ -21,7 +21,13 @@ const config = {
         test: /\.css$/,
         use: [
           'style-loader',
-          'css-loader'
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1
+            }
+          },
+          'postcss-loader'
         ]
       },
       {
@@ -30,27 +36,8 @@ const config = {
         exclude: /node_modules/
       },
       {
-        test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
-      },
-      {
         test: /\.svg$/,
         use: 'file-loader'
-      },
-      {
-        test: /\.png$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              mimetype: 'image/png'
-            }
-          }
-        ]
       }
     ]
   },

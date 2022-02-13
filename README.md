@@ -1,31 +1,29 @@
-# Surprise Gaming - Ranking paginas
-
-Ranking de paginas da Surprise Gaming.
+# Surprise paginas
 
 ## Building and running on localhost
 
 First install dependencies:
 
 ```sh
-npm install
+yarn install
 ```
 
 To run in hot module reloading mode:
 
 ```sh
-npm start
+yarn start
 ```
 
 To create a production build:
 
 ```sh
-npm run build-prod
+yarn build-prod
 ```
 
 To create a development build:
 
 ```sh
-npm run build-dev
+yarn build-dev
 ```
 
 ## Running
@@ -37,7 +35,7 @@ Open the file `dist/index.html` in your browser
 To run unit tests:
 
 ```sh
-npm test
+yarn test
 ```
 
 ## Credits
